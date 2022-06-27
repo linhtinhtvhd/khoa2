@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.wrapper{
+  width: 60%;
+  margin: auto;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  font-size: 20px;
+}
+.input-plus{
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  font-size: 30px;
+}
+.iteminput{
+  margin-bottom: 20px;
+  display: flex;
+  
+}
+.iteminput label{
+  flex: 1;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  color: #999;
+  align-items: center;
+}
+.footer-left{
+  display: flex;
+  align-items: center;
+}
+.numberDo{
+  margin-right: 8px;
+}
