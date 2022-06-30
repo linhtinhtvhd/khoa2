@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/c732cb00-be61-4d64-b8c3-99f022e7a123/8581641b-b5eb-4e9c-bbf8-6be15a81f347/VN-vi-20220620-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  min-height: 100vh;
+  margin-top: -22px;
+  position: relative;
 }
 
 code {
