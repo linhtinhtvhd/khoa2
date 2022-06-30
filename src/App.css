@@ -36,42 +36,37 @@
     transform: rotate(360deg);
   }
 }
-.wrapper{
-  width: 60%;
-  margin: auto;
-}
-.form{
+.trafficsigns{
+  height: 100vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  margin-top: 40px;
-  font-size: 20px;
 }
-.input-plus{
-  border: none;
-  outline: none;
-  border-bottom: 1px solid #ccc;
-  width: 100%;
-  font-size: 30px;
-}
-.iteminput{
+.btn{
   margin-bottom: 20px;
-  display: flex;
-  
-}
-.iteminput label{
-  flex: 1;
-}
-.footer{
-  display: flex;
-  justify-content: space-between;
   font-size: 30px;
-  color: #999;
-  align-items: center;
 }
-.footer-left{
-  display: flex;
-  align-items: center;
+.input-radio{
+  width: 20%;
+  display:flex;
+  justify-content: space-between;
 }
-.numberDo{
-  margin-right: 8px;
+.color{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #999;
+}
+.red{
+  background-color: red;
+}
+.yellow{
+  background-color: yellow;
+}
+.green{
+  background-color: green;
+}
+.back-none{
+  background-color: white;
 }

@@ -1,20 +1,29 @@
-import React from 'react'
-import {Form} from './Form'
-import {Input} from './Input'
-import {Footer} from './Footer'
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 export const ToDoList = () => {
-    const [actvieDo,setActvieDo]=useState(['Clean up bedroom', 'Buy some milk','Jogging','Learn React','Doing Excercises'])
-    const [acticePlus,setActive]=useState('')
-    const [actWill,setActWill] = useState ([...actvieDo])
-    const [count,setCount]=useState(actWill.length)
-    console.log(actWill)
+    let [count,setCount] = useState(2)
   return (
-    < div className='wrapper'>
-    <Input setAct={setActive} setactDo={setActvieDo} actPlus={acticePlus} setCou={setCount} actWil={actWill} setActWi={setActWill}/>
-    <Form act ={actvieDo} setActWi={setActWill} setCou={setCount} actWil={actWill}/>
-    <Footer cou={count}/>
-    </ div>
+    <div className='trafficsigns'>
+        <button className='btn' onClick={function(e){
+            
+              setCount((prev)=>{
+                if(prev===3){
+                  prev = 0
+                }
+                return ++prev
+              })
+          
+           console.log(count)
+        }}>Next</button>
+      
+        <div className='input-radio'>
+        
+            <div className={`color white ${count ===1 && 'red' }`}></div>
+            <div className={`color white ${count ===2 && 'yellow' }`}></div>
+            <div className={`color white ${count ===3 && 'green' }`}></div>
+          
+        </div>
+    </div>
+    
   )
 }
