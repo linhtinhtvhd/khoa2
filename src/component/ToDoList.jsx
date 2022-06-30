@@ -4,7 +4,7 @@ import {Input} from './Input'
 import {Footer} from './Footer'
 import { useState } from 'react'
 
-export const Todolist = () => {
+export const ToDoList = () => {
     const [actvieDo,setActvieDo]=useState(['Clean up bedroom', 'Buy some milk','Jogging','Learn React','Doing Excercises'])
     const [acticePlus,setActive]=useState('')
     const [actWill,setActWill] = useState ([...actvieDo])
